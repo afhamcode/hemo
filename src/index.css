@@ -1,0 +1,535 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+}
+     
+    /* Home Page Css */
+
+.Navbar{
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.Navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.Navbar li{
+  cursor: pointer;
+}
+.Navbar li:hover{
+  text-decoration: underline;
+}
+.Navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.hero h1{
+    
+   padding: 10px;
+   margin-top: 60px;
+}
+.hero p{
+  margin-top: 10px;
+}
+.hero button{
+  margin-top: 20px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.hero button:hover{
+background-color: darkred;
+}
+
+.hemowork {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hemowork > p {
+  margin-top: 5px;
+}
+
+.why-cards,.how-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.why-cards div,.how-cards div {
+  width: 250px;
+  min-height: auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.why-cards div:hover,.how-cards div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.why-cards h3,.how-cards h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.why-cards p,.how-cards p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.why_hemo {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cta {
+  margin-top: 35px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.cta p {
+  margin-top: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.cta button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.request-btn {
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+}
+
+.donate-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #333 !important;
+  margin-left: 10px;
+}
+
+.request-btn:hover {
+  background-color: darkred;
+}
+
+.donate-btn:hover {
+  background-color: #ddd;
+}
+
+
+.footer {
+  margin-top: 40px;
+  padding: 40px 8%;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-brand {
+  max-width: 350px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer a {
+  color: #222;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-disclaimer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.why_hemo > p:last-child {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+
+                                    /* Find Blood Page */
+
+.find-blood {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+                  /* heading  */
+
+.find-blood-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.find-blood-header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.find-blood-header p {
+  color: #666;
+  font-size: 17px;
+}
+                 
+                  /* filter section */
+.blood-filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 50px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+.filter-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.donor-btn button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #b91c1c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.donor-btn button:hover {
+  background: #991b1b;
+}
+ 
+       /* result section */
+       .result-section {
+  margin-top: 20px;
+}
+
+.result-header {
+  margin-bottom: 20px;
+}
+
+.result-header h2 {
+  font-size: 28px;
+}
+
+              /* mock donor  card */
+ .blood-request-card,.mock-donor-card {
+  max-width: 600px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mock-donor-card p {
+  margin: 8px 0;
+}
+
+.mock-donor-card p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+            /* view donor button */
+.view-donor-btn {
+  margin-top: 20px;
+}
+
+.view-donor-btn button {
+  padding: 10px 18px;
+  border: 1px solid #b91c1c;
+  border-radius: 8px;
+  background: white;
+  color: #b91c1c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-donor-btn button:hover {
+  background: #b91c1c;
+  color: white;
+}
+                                         /* Donate Blood Page */
+.donate-blood{
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;      /* ✅ centers the whole page */
+  padding: 20px;
+}
+     /* page header */
+    
+     .donate-blood-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.donate-blood-header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.donate-blood-header p {
+  color: #666;
+  font-size: 17px;
+}
+
+
+       /* Blood Request Card */
+
+
+
+       .urgency{
+        background-color: #d70707;
+        border:2px solid rgb(31, 29, 29);
+        border-radius: 5px;
+        padding: 5px;
+         font-weight: bold;
+         font-size:medium
+       }
+        .request-blood h2{
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }
+
+
+ .blood-request-card{
+  max-width:none;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+ }
+.request-blood,
+.request-details,
+.request-deadline,
+.request-remarks {
+  flex: 1;
+  line-height: 1.5;
+
+}
+.request-details p,
+.request-deadline p,
+.request-remarks p {
+  margin-bottom: 8px;
+}
+
+     /* button */
+.blood-request-card button{
+  height: 50px;
+  padding: 5px;
+  background-color: #ec4949;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+.blood-request-card button:hover{
+  background-color: #b91c1c;
+  color: white;
+}
+
+
+ 
+
+
+                           
+                                          /* mobile or screens other than desktop */
+
+
+@media (max-width: 600px) {
+
+       /* home page */
+  .hero h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .hero p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero button {
+    padding: 10px 20px;
+  }
+
+  .hemowork > p {
+    width: 90%;
+    text-align: center;
+  }
+  .why_hemo> p {
+    width: 90%;
+    text-align: center;
+  }
+  
+
+  .how-cards,.why-cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-cards div,.why-cards div {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+.cta {
+  margin-top: 35px;
+  padding: 30px 20px;
+}
+
+.cta h1 {
+  font-size: 28px;
+}
+
+.cta p {
+  width: 90%;
+}
+
+.cta button {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 15px auto;
+}
+.footer {
+  padding: 35px 20px;
+}
+
+.footer-main {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-links {
+  align-items: center;
+}
+
+.footer-disclaimer {
+  text-align: center;
+}   
+     
+}
+
+    /* find blood page */
+@media (max-width: 768px) {
+  .find-blood {
+    padding: 40px 16px;
+  }
+
+  .blood-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .donor-btn {
+    width: 100%;
+  }
+
+  .donor-btn button {
+    width: 100%;
+  }
+
+  .mock-donor-card {
+    max-width: none;
+  }
+}
+
+    /* .donate-blood page */
+    @media (max-width: 768px) {
+
+  .blood-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .blood-request-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .request-blood,
+  .request-details,
+  .request-deadline,
+  .request-remarks {
+    text-align: center;
+  }
+
+  .blood-request-card button {
+    width: 100%;
+  }
+}
