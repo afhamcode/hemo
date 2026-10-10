@@ -344,14 +344,18 @@ background-color: darkred;
 
 
 
-       .urgency{
-        background-color: #d70707;
-        border:2px solid rgb(31, 29, 29);
-        border-radius: 5px;
-        padding: 5px;
-         font-weight: bold;
-         font-size:medium
-       }
+   .urgency {
+  display: inline-block;
+  width: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #d70707;
+  border: 2px solid rgb(31, 29, 29);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
         .request-blood h2{
           margin-top: 15px;
           margin-bottom: 5px;
