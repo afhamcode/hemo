@@ -12,6 +12,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import FindBlood from "./Pages/FindBlood";
 import DonateBlood from "./Pages/DonateBlood";
+import CreateBloodRequest from "./Pages/CreateBloodRequest";
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
     <Route path="/about" element={<About/>}/>
     <Route path="/find blood" element={<FindBlood/>}/>
     <Route path="/Donate blood" element={<DonateBlood/>}/>
+    <Route path="/create blood request" element={<CreateBloodRequest/>}/>
+
 
   </Routes>
   </BrowserRouter>
