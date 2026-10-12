@@ -25,9 +25,9 @@ function App() {
     <Route path="/login" element={<Login/>}/>
     <Route path="/register" element={<Register/>}/>
     <Route path="/about" element={<About/>}/>
-    <Route path="/find blood" element={<FindBlood/>}/>
-    <Route path="/Donate blood" element={<DonateBlood/>}/>
-    <Route path="/create blood request" element={<CreateBloodRequest/>}/>
+    <Route path="/find-blood" element={<FindBlood/>}/>
+    <Route path="/donate-blood" element={<DonateBlood/>}/>
+    <Route path="/create-blood-request" element={<CreateBloodRequest/>}/>
 
 
   </Routes>
